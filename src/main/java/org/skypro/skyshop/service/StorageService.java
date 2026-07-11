@@ -39,7 +39,7 @@ public class StorageService {
         Product apple = new SimpleProduct(UUID.randomUUID(),"яблоко ", 50);
         Product banana = new DiscountedProduct(UUID.randomUUID(),"Банан ", 80, 50);
         Product milk = new SimpleProduct(UUID.randomUUID(),"Молоко ", 120);
-        Product bread = new FixPriceProduct(UUID.randomUUID(),"Хлеб");
+        Product bread = new FixPriceProduct(UUID.randomUUID(),"Хлеб ");
         Product cheese = new SimpleProduct(UUID.randomUUID(),"Сыр", 350);
         Product chocolate = new SimpleProduct(UUID.randomUUID(),"Шоколад", 150);
 

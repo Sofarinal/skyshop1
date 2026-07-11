@@ -36,7 +36,7 @@ public class StorageService {
     }
 
     private void initData(){
-        Product apple = new SimpleProduct(UUID.randomUUID(),"яблоко", 50);
+        Product apple = new SimpleProduct(UUID.randomUUID(),"яблоко ", 50);
         Product banana = new DiscountedProduct(UUID.randomUUID(),"Банан", 80, 50);
         Product milk = new SimpleProduct(UUID.randomUUID(),"Молоко", 120);
         Product bread = new FixPriceProduct(UUID.randomUUID(),"Хлеб");

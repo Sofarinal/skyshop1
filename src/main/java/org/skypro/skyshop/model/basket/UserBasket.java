@@ -5,18 +5,18 @@ import java.util.List;
 
 public final class UserBasket {
     private final List<BasketItem> items;
-    private final int totol;
+    private final int total;
 
     public UserBasket(List<BasketItem> items){
         this.items = Collections.unmodifiableList(items);
-        this.totol = items.stream().mapToInt(item -> item.getProduct().getPrice() * item.getQuantity()).sum();
+        this.total = items.stream().mapToInt(item -> item.getProduct().getPrice() * item.getQuantity()).sum();
     }
 
     public List<BasketItem> getItems() {
         return items;
     }
 
-    public int getTotol(){
-        return totol;
+    public int getTotal(){
+        return total;
     }
 }

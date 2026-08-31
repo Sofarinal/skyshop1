@@ -43,7 +43,7 @@ public class BasketServiceTest {
     @Test
     void addProductToBasket_WhenProductExists_ShouldAddToBasket() {
         UUID id = UUID.randomUUID();
-        Product product = new SimpleProduct(id, "Яблоко", 50);
+        Product product = new SimpleProduct(id, "Яблоко ", 50);
         when(storageService.getProductById(id)).thenReturn(Optional.of(product));
         basketService.addProductToBasket(id);
         verify(productBasket, times(1)).addProduct(id);
